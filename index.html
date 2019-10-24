@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <h1>Оценка рисков</h1>
+            <label>Внешние угрозы</label>
+            <input id="outer-risk" type="number" placeholder="введите уровень угрозы" value="1" min="1" max="100">
+            <label>Внутренник угрозы</label>
+            <input id="inner-risk" type="number" placeholder="введите уровень угрозы" value="1" min="1" max="100">
+            <button>Готово</button>
+            <p id="func">
+
+            </p>
+        </aside>
+        <div class="work-area">
+            <canvas id="risk-chart"></canvas>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    background: azure;
+}
+
+aside {
+    /* width: 300px; */
+    flex: 1 0 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+aside input,
+aside button {
+    margin: 5px 0 15px 0;
+    padding: 10px;
+}
+
+.work-area {
+    position: relative;
+    flex: 5 0 500px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+#risk-chart {
+    position: absolute;
+}
+
+@media (max-width: 750px) {
+    main {
+        flex-direction: column;
+    }
+}
