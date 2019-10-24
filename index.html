@@ -11,6 +11,7 @@
 
 <body>
     <main>
+        <!-- Боковое меню -->
         <aside>
             <h1>Оценка рисков</h1>
             <label>Внешние угрозы</label>
@@ -19,10 +20,11 @@
             <input id="inner-risk" type="number" placeholder="введите уровень угрозы" value="1" min="1" max="100">
             <button>Готово</button>
             <p id="func">
-
+                <!-- Сюда будем писать текстовое представление функции при помощи JS -->
             </p>
         </aside>
         <div class="work-area">
+            <!-- Холст, на котором рисуется график -->
             <canvas id="risk-chart"></canvas>
         </div>
     </main>

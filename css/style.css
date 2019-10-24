@@ -1,3 +1,4 @@
+/* Делаем приложение на весь экран */
 html,
 body {
     height: 100%;
@@ -5,6 +6,7 @@ body {
     margin: 0;
 }
 
+/* Делим экран на две вертикальные области - меню и график */
 main {
     height: 100%;
     width: 100%;
@@ -13,14 +15,16 @@ main {
     background: azure;
 }
 
+/* Выстраиваем элементы в меню один под другим и растягиваем по всей ширине меню */
 aside {
-    /* width: 300px; */
+    /* Размер относительно графика */
     flex: 1 0 200px;
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
+/* Форматируем кнопки и поля для ввода */
 aside input,
 aside button {
     margin: 5px 0 15px 0;
@@ -28,17 +32,18 @@ aside button {
 }
 
 .work-area {
+    /* Это надо для того, чтобы график автоматически менял размер, отслеживая изменение размера родителя */
     position: relative;
+    /* Размер относительно меню */
     flex: 5 0 500px;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
 }
 
+/* Нужно для автоизменения размера холста */
 #risk-chart {
     position: absolute;
 }
 
+/* Если ширина экрана менее 750px, выстраиваем меню и график один под другим */
 @media (max-width: 750px) {
     main {
         flex-direction: column;
