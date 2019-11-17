@@ -1,0 +1,32 @@
+{
+  "name": "udovitskaya-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solovevserg/udovitskaya-chart.git"
+  },
+  "author": "Sergei Solovev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solovevserg/udovitskaya-chart/issues"
+  },
+  "homepage": "https://github.com/solovevserg/udovitskaya-chart#readme",
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "sdal.pw",
+    "win": {
+      "publisherName": "Solovev Sergei"
+    }
+  },
+  "dependencies": {}
+}
