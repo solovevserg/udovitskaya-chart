@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/solovevserg/udovitskaya-chart#readme",
   "devDependencies": {
-    "electron": "^7.0.0",
+    "electron": "^9.4.0",
     "electron-builder": "^21.2.0"
   },
   "build": {
